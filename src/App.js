@@ -1,9 +1,10 @@
 
 import './App.css';
-
+import '../src/Scss/variables.scss';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Containers/Home/Home';
+import Header from './Components/Header/Header';
 import Login from './Containers/Login/Login';
 import Profile from './Containers/Profile/Profile';
 import Peliculas from './Containers/Peliculas/Peliculas';
@@ -15,15 +16,13 @@ function App() {
 
       <BrowserRouter>
 
-        {/* <Login />
-        <Profile /> */}
-
+        <Header />
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login/>}/>
+          <Route path="/login" element={<Login />}/>
           <Route path="/profile" element={<Profile />}/>
-          <Route path="/peliculas" element={<Peliculas />} />
-          <Route path="/profPelicula" element={<ProfPelicula />}/>
+          <Route path="/peliculas" element={<Peliculas/>} />
+          <Route path="/profPelicula" element={<ProfPelicula/>}/>
 
 
         </Routes>

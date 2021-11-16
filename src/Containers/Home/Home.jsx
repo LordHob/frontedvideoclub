@@ -35,8 +35,6 @@ const Home = () => {
 
         setPeliculas(res.data.results);
 
-
-
     };
 
     const escogePelicula = (peliculaEscogida) => {

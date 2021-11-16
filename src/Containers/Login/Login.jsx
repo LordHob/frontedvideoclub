@@ -10,7 +10,7 @@ import './Login.css';
 
 const Login = (props) => {
 
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     //Hooks
     const [msgError, setmsgError] = useState("");
@@ -43,7 +43,7 @@ const Login = (props) => {
             props.dispatch({ type: LOGIN, payload: datos });
 
             /*setTimeout(() => {
-                history("/profile");
+                navigate("/profile");
             }, 4000);*/
         } catch (error) {
             setmsgError(error);
