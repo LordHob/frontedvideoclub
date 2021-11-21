@@ -9,7 +9,6 @@ import Register from './Containers/Register/Register';
 import Films from './Containers/Films/films';
 import Film from './Containers/Film/film';
 import Admin from './Containers/Admin/Admin';
-import Footer from './Components/Footer/Footer';
 
 function App() {
   return (

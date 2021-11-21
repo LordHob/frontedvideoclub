@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import pocima from '../../images/progress.gif';
+import pocima from '../../images/load.gif';
 import {useNavigate} from 'react-router-dom';
 import {TAKE_FILM} from '../../redux/types';
 import { connect } from 'react-redux';

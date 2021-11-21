@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { LOGOUT, UPDATE_USER } from '../../redux/types';
 import './Admin.scss';
-import profile from '../../images/profile.png';
+// import profile from '../../images/profile.png';
 
 
 
@@ -25,7 +25,7 @@ const Admin = (props) => {
 
     const takeusers = async () => {
         try {
-            let res = await axios.get("https://app-movies-mongoose.herokuapp.com/usuario/");
+            let res = await axios.get("https://rgg-backend-videoclub.herokuapp.com/users");
             setDatosPerfil(res.data);
             console.log("res: ", res)
         } catch (error) {
@@ -34,7 +34,7 @@ const Admin = (props) => {
     };
     const takepedidos = async () => {
         try {
-            let res_pedido = await axios.get("https://app-movies-mongoose.herokuapp.com/pedido",  {
+            let res_pedido = await axios.get("https://rgg-backend-videoclub.herokuapp.com/orders",  {
                 headers:{
                     'Authorization': `Bearer ${props.data_user.token}` 
                 }

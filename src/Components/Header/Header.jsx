@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Boton from '../Boton/Boton';
 import { connect } from 'react-redux';
-import logo from '../../images/raul-logo.png';
+import logo from '../../images/logo.png';
 
 
 const Header = (props) => {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import {TAKE_FILM} from '../../redux/types';
 import { connect } from 'react-redux';
-import pocima from '../../images/progress.gif';
+import pocima from '../../images/load.gif';
 
 
 
