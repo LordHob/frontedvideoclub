@@ -1,21 +1,18 @@
+
 import React from 'react';
-
-
-
+import "./Boton.css";
 import { useNavigate } from 'react-router-dom';
 
 const Boton = (props) => {
 
-    const history = useNavigate();
+    const navigate = useNavigate();
 
-    const gototheurl = () => {
-        history(props.url);
+    const llevame = () => {
+        navigate(props.url);
     }
 
-    console.log("props: ", props);
     return (
-        <div className="designBoton" onClick={()=>gototheurl()}>{props.destino}</div>
-        
+        <div className="desingBoton" onClick={() => llevame()}>{props.destino}</div>
     )
 };
 

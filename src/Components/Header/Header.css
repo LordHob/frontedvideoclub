@@ -1,0 +1,11 @@
+
+.desingHeader {
+    height: 4em;
+    background-color: black;
+
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
