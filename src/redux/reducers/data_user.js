@@ -1,11 +1,12 @@
-import {LOGIN, LOGOUT} from '../types';
+import {LOGIN, LOGOUT, UPDATE_USER} from '../types';
 
 const initialState = {
     token : '',
-    usuario : {}
+    user : {} //ponia usuario
 };
 
-const credentialsReducer = (state = initialState, action) => {
+const data_user = (state = initialState, action) => {
+    
     switch(action.type){
         //Ejemplo de añadido de datos
         case LOGIN :
@@ -15,8 +16,10 @@ const credentialsReducer = (state = initialState, action) => {
         case LOGOUT : 
             return initialState;
             
+        case UPDATE_USER:
+            return{ ...state, user: action.payload}; //emn user metes en este caso el body
         default :
             return state
     }
 }
-export default credentialsReducer;
+export default data_user;

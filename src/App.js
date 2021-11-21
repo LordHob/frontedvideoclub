@@ -1,32 +1,32 @@
 
 import './App.css';
-import '../src/Scss/variables.scss';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Containers/Home/Home';
 import Header from './Components/Header/Header';
+import Home from './Containers/Home/Home';
 import Login from './Containers/Login/Login';
 import Profile from './Containers/Profile/Profile';
-import Peliculas from './Containers/Peliculas/Peliculas';
-import ProfPelicula from './Containers/ProfPelicula/ProfPelicula';
 import Register from './Containers/Register/Register';
+import Films from './Containers/Films/films';
+import Film from './Containers/Film/film';
+import Admin from './Containers/Admin/Admin';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
 
       <BrowserRouter>
-
         <Header />
+
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/films" element={<Films />} />
+          <Route path="/film" element={<Film />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<Profile />}/>
-          <Route path="/peliculas" element={<Peliculas/>} />
-          <Route path="/profPelicula" element={<ProfPelicula/>}/>
-
-
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
 
       </BrowserRouter>

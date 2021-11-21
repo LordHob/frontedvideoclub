@@ -1,9 +1,12 @@
 import {combineReducers} from 'redux';
-import credentials from './credentials-reducer';
+import data_user from './data_user';
+import data_film from './data_film';
+
 
 
 const rootReducer = combineReducers({
-    credentials
+    data_user, data_film
+
 });
 
 export default rootReducer;
