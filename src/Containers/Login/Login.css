@@ -2,7 +2,7 @@
 .designLogin{
     display: flex;
     flex-direction: column;
-    background-color: rgb(138, 26, 45);
+    background-color: #262626;
     justify-content: center;
     align-items: center;
     height: 30.3em;

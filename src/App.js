@@ -9,6 +9,7 @@ import Login from './Containers/Login/Login';
 import Profile from './Containers/Profile/Profile';
 import Peliculas from './Containers/Peliculas/Peliculas';
 import ProfPelicula from './Containers/ProfPelicula/ProfPelicula';
+import Register from './Containers/Register/Register';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login />}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />}/>
           <Route path="/peliculas" element={<Peliculas/>} />
           <Route path="/profPelicula" element={<ProfPelicula/>}/>
