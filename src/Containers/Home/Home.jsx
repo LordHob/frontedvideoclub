@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
-import load from '../../Assets/img/load.gif';
+import load from '../../images/load.gif';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
