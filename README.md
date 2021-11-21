@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# PROYECTO DE FRONTED CON REACT/REDUX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![imagen](https://res.cloudinary.com/practicaldev/image/fetch/s--BxQ7CA2Z--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/grki97glctbmjydzqejw.png)
 
-## Available Scripts
+## Deploy AWS Amplify
 
-In the project directory, you can run:
+https://master.d3b4twkw235aqh.amplifyapp.com/
+
+
+
+
+
 
 ### `npm start`
 
