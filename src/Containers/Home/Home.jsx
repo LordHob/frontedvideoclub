@@ -55,7 +55,7 @@ const Home = (props) => {
 
     const datauser = async () => {
         try {
-            let res = await axios.get("https://app-movies-mongoose.herokuapp.com/usuario/");
+            let res = await axios.get("https://rgg-backend-videoclub.herokuapp.com//users");
             setDatosPerfil(res.data);
             console.log("res: ", res)
         } catch (error) {
@@ -80,7 +80,7 @@ const Home = (props) => {
             <div>
 
                 <div className="container-title-search pt-5">
-                    <h1 className='h1-home'>RAUL FLIX</h1>
+                    <h1 className='h1-home'>Videoclub</h1>
                     <input className="imput-search" type="text" name="film" onChange={writefilm} title="film" lenght="30" placeholder="Escribe pelicula" />
                 </div>
                 <div className="container-buscador">
