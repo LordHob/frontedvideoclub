@@ -96,15 +96,10 @@ const Register = () => {
         <div className="designRegister">
             {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
             <input type='text' name='name' title='name' onChange={userHandler} lenght='30' placeholder='Nombre' />
-            <input type='text' name='surname' title='surname' onChange={userHandler} lenght='30' placeholder='Apellido' />
-            <input type='text' name='dni' title='dni' onChange={userHandler} lenght='10' placeholder='DNI' />
             <input type='email' name='email' title='email' onChange={userHandler} lenght='30' placeholder='Email' />
-            <input type='text' name='address' title='address' onChange={userHandler} lenght='30' placeholder='Direccion' />
             <input type='text' name='city' title='city' onChange={userHandler} lenght='30' placeholder='Ciudad' />
-            <input type='number' name='cp' title='cp' onChange={userHandler} lenght='5' placeholder='C.Postal' />
             <input type='text' name='password' title='password' onChange={userHandler} lenght='30' placeholder='Password' />
             <input type='text' name='password2' title='password2' onChange={userHandler} lenght='30' placeholder='Repite Password' />
-            <input type='text' name='phone' title='phone' onChange={userHandler} lenght='20' placeholder='Teléfono' />
             <div className="botonSend" onClick={() => enviaDatosRegistro()}>Registrame</div>
             <div>{msgError}</div>
         </div>
