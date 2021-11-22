@@ -24,8 +24,8 @@ const Login = (props) => {
     const logeame = async () => {
 
         let body = {
-            correo: credentials.correo,
-            clave: credentials.clave
+            email: credentials.email,
+            password: credentials.password
         };
 
         try {
