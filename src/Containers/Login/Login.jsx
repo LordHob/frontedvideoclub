@@ -30,8 +30,8 @@ const Login = (props) => {
 
         try {
 
-            let res = await axios.post("https://aramossanchez-videoclub-api.herokuapp.com/usuarios/login", body);
-            setmsgError(`Hola de nuevo ${res.data.usuario.nombre}....`);
+            let res = await axios.post("https://rgg-backend-videoclub.herokuapp.com/users/signin", body);
+            setmsgError(`Hola de nuevo ${res.data.user.name}....`);
 
             //MÉTODO NO VÁLIDO PRE-REDUX
             //localStorage.setItem("datosLogin", JSON.stringify(res.data.usuario));
@@ -57,8 +57,8 @@ const Login = (props) => {
 
         <div className="designLogin">
             {/*<pre>{JSON.stringify(credentials, null,2)}</pre>*/}
-            <input type='email' name='correo' title='correo' onChange={manejadorInputs} lenght='30' />
-            <input type='password' name='clave' title='clave' onChange={manejadorInputs} lenght='30' />
+            <input type='email' name='email' title='email' onChange={manejadorInputs} lenght='30' />
+            <input type='password' name='password' title='password' onChange={manejadorInputs} lenght='30' />
             <div className="sendButton" onClick={() => logeame()}>Login</div>
             <div className="error">{msgError}</div>
         </div>
