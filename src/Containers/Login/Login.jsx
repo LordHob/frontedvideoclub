@@ -14,7 +14,7 @@ const Login = (props) => {
 
     //Hooks
     const [msgError, setmsgError] = useState("");
-    const [credentials, setCredentials] = useState({ correo: '', clave: '' });
+    const [credentials, setCredentials] = useState({ email: '', password: '' });
 
     //Handler o manejador
     const manejadorInputs = (e) => {
