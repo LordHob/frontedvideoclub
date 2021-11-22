@@ -1,4 +1,27 @@
 
-.registerDesign {
-    
+.designRegister {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.botonSend {
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 0.3em;
+
+    height: 1.5em;
+    width: 6em;
+
+    background-color: rgb(59, 84, 194);
+    color: white;
+    transition: 0.5s;
+}
+
+.botonSend:hover {
+    transition: 0.4s;
+    background-color: rgb(95, 28, 28);
 }
