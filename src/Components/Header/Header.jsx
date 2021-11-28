@@ -10,16 +10,12 @@ const Header = (props) => {
     return (
         <div className="desingHeader">
             <Boton destino="Home" url="/" />
+            <Boton destino="Home2" url="/home2" />
             <Boton destino="Login" url="/login" />
             <Boton destino="Register" url="/register" />
             <Boton destino="Profile" url="/profile" />
-            {props.userLog.usuario.admin ?
-                <div>
-                    <Boton destino="Orders" url="/orders" />
-                    <Boton destino="Users" url="/users" />
-                </div>
-                : ''
-            }
+            <div id="admin">{props.credentials?.user.admin == true && <Boton destino="Admin" url="/admin" />}</div>
+            
         </div>
     )
 }

@@ -1,6 +1,152 @@
+.designProfile{
+    background-color: #941717;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    color: white;
+}
+
+.recuadroperfil{
+        height: 12em;
+        width: 20em;
+        background-color:gray;
+        color: white;
+        border-radius: 1.2em;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+}
+
+.recuadroperfilInfo{
+    height: 20em;
+    width: 20em;
+    background-color: gray;
+    border-radius: 1.2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 3px 2px #ff0000;
+}
+
+
+
 
 .designProfile {
-    background-color: rgb(189, 166, 116);
-    height: 15em;
+    background-color: black;
+    height: 88vh;
     color: white;
+}
+
+#nombre{
+    border-radius: 0.5em;
+    background-color: white;
+    height: 3em;
+    width: 14em;
+}
+
+#email{
+    border-radius: 0.5em;
+    background-color: white;
+    height: 3em;
+    width: 14em;
+}
+
+.cuadrado1{
+    height: 20em;
+    width: 20em;
+    background-color: gray;
+    border-radius: 1.2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 3px 2px #ff0000;
+
+}
+
+#logout{
+    transition: 0.4s;
+    background-color: rgb(255 0 0);
+    transform: scale(1.1);
+    height: 2.1em;
+    width: 8em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update{
+    transition: 0.4s;
+    background-color: rgb(255 0 0);
+    transform: scale(1.1);
+    height: 2.1em;
+    width: 12em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tituloActualizar{
+    font-size: 3em;
+    color: white;
+    margin-top: 2em;
+    text-shadow: rgb(226, 0, 0) 0.1em 0.1em 0.2em;
+}
+
+.datosperfil{
+    font-size: 1.2em;
+    color: white;
+    font-family: unset;
+   
+}
+
+.datosacceso{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    
+}
+
+.pedido {
+
+    margin-top: 0.5em;
+    height: 1em;
+    background-color: darkred;
+    height: 3.1em;
+    width: 17em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pedidopadre{
+    flex-wrap: wrap;
+    height: 23em;
+    width: 36em;
+    background-color: gray;
+    border-radius: 1.2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 3px 2px #ff0000;
+    justify-content: unset;
+}
+
+.pedidos{
+    font-size: 2.2em;
+    font-family: unset;
 }

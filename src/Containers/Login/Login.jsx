@@ -42,10 +42,10 @@ const Login = (props) => {
 
             props.dispatch({ type: LOGIN, payload: datos });
 
-            /*setTimeout(() => {
+            setTimeout(() => {
                 navigate("/profile");
-            }, 4000);*/
-        } catch (error) {
+            }, 2000);
+        } catch (error) {   
             setmsgError(error);
 
         }
@@ -57,8 +57,8 @@ const Login = (props) => {
 
         <div className="designLogin">
             {/*<pre>{JSON.stringify(credentials, null,2)}</pre>*/}
-            <input type='email' name='email' title='email' onChange={manejadorInputs} lenght='30' />
-            <input type='password' name='password' title='password' onChange={manejadorInputs} lenght='30' />
+            <input type='email' name='email' title='email' onChange={manejadorInputs} lenght='30' placeholder='email' />
+            <input type='password' name='password' title='password' onChange={manejadorInputs} lenght='30' placeholder='password' />
             <div className="sendButton" onClick={() => logeame()}>Login</div>
             <div className="error">{msgError}</div>
         </div>

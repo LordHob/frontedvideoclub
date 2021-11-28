@@ -63,7 +63,7 @@ const Register = () => {
             // dni: user.dni,
             email: user.email,
             // address: user.address,
-            // city: user.city,
+            city: user.city,
             // cp: user.cp,
             password: user.password,
             // password2: user.password2,
