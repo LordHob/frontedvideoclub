@@ -5,12 +5,12 @@
 
     margin: 1em;
 
-    background-color: red;
+    background-color: #a7a7a7;
     border-radius: 0.2em;
     transition: 0.4em;  
 }
 
 .desingBoton:hover{
-    background-color: rgb(236, 81, 81);
+    background-color: #d0d0d0;
 
 }

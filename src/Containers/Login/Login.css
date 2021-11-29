@@ -9,16 +9,17 @@
 }
 
 .sendButton{
-    height: 2em;
-    width: 6em;
+    height: 1.5em;
+    width: 4em;
+    margin-top: 1em;
     cursor: pointer;
 
-    background-color: rgb(14, 16, 133);
-    color: white;
+    background-color: #a7a7a7;
+    color: black;
 
     border-radius: 0.2em;
 }
 .sendButton:hover {
     transition: 0.4s;
-    background-color: rgb(71, 105, 179);
+    background-color: #d0d0d0;
 }
