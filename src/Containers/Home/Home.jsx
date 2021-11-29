@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-
 import axios from 'axios';
 import load from '../../images/load.gif';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +17,7 @@ const Home = () => {
         setTimeout(() => {
 
             traePeliculas();
-        }, 3000);
+        }, 2000);
 
 
 

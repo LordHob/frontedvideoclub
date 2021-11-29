@@ -2,23 +2,30 @@
 import React from 'react';
 import "./Header.css";
 import Boton from "../Boton/Boton";
+import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
+import logo from '../../images/logo1.png';
 
 const Header = (props) => {
-
+    const history = useNavigate();
+    const llevame = () => {
+        history("/");
+    }
 
     return (
         <div className="desingHeader">
+            <div>
+                <img id="logo" src={logo} alt="logo" onClick={() => llevame()} />
+            </div>
+            <div id="menu">
             <Boton destino="Home" url="/" />
-            <Boton destino="Home2" url="/home2" />
             <Boton destino="Login" url="/login" />
             <Boton destino="Register" url="/register" />
             <Boton destino="Profile" url="/profile" />
-            <div id="admin">{props.credentials?.user.admin == true && <Boton destino="Admin" url="/admin" />}</div>
-            
+            </div>
         </div>
     )
-}
+};
 
 export default connect((state) => (
     {

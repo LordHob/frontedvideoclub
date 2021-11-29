@@ -1,6 +1,6 @@
 .designProfile{
-    background-color: #941717;
-    height: 100vh;
+    background-color: #262626;
+    height: 20em;
     display: flex;
     align-content: center;
     align-items: center;
@@ -10,116 +10,60 @@
 }
 
 .recuadroperfil{
-        height: 12em;
+        height: 20em;
         width: 20em;
         background-color:gray;
-        color: white;
+        color: black;
         border-radius: 1.2em;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-    
 }
 
 .recuadroperfilInfo{
     height: 20em;
-    width: 20em;
-    background-color: gray;
+    width: 25em;
+    background-color: rgb(85, 25, 25);
     border-radius: 1.2em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 3px 3px 3px 2px #ff0000;
 }
-
-
-
 
 .designProfile {
-    background-color: black;
-    height: 88vh;
-    color: white;
-}
-
-#nombre{
-    border-radius: 0.5em;
-    background-color: white;
-    height: 3em;
-    width: 14em;
-}
-
-#email{
-    border-radius: 0.5em;
-    background-color: white;
-    height: 3em;
-    width: 14em;
-}
-
-.cuadrado1{
-    height: 20em;
-    width: 20em;
-    background-color: gray;
-    border-radius: 1.2em;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 3px 3px 3px 2px #ff0000;
-
+    background-color: #262626;
+    height: 80vh;
+    color: black;
 }
 
 #logout{
     transition: 0.4s;
-    background-color: rgb(255 0 0);
+    background-color: #262626;
     transform: scale(1.1);
-    height: 2.1em;
-    width: 8em;
+    height: 2em;
+    width: 5em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.update{
-    transition: 0.4s;
-    background-color: rgb(255 0 0);
-    transform: scale(1.1);
-    height: 2.1em;
-    width: 12em;
-    border-radius: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#tituloActualizar{
-    font-size: 3em;
-    color: white;
-    margin-top: 2em;
-    text-shadow: rgb(226, 0, 0) 0.1em 0.1em 0.2em;
 }
 
 .datosperfil{
     font-size: 1.2em;
-    color: white;
+    color: black;
     font-family: unset;
-   
 }
 
 .datosacceso{
     font-size: 1.2em;
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: unset;
-    
 }
 
-.pedido {
-
+.order {
     margin-top: 0.5em;
     height: 1em;
     background-color: darkred;
@@ -134,19 +78,17 @@
 
 .pedidopadre{
     flex-wrap: wrap;
-    height: 23em;
-    width: 36em;
-    background-color: gray;
+    height: 20em;
+    width: 25em;
+    background-color: rgb(85, 25, 25);
     border-radius: 1.2em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 3px 3px 3px 2px #ff0000;
     justify-content: unset;
 }
 
-.pedidos{
-    font-size: 2.2em;
-    font-family: unset;
+.orders{
+    font-size: 2em;
 }
