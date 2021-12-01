@@ -37,9 +37,8 @@ const Profile = (props) => {
     };
 
     const PEDIDO_PELICULA = async () => {
-        let res = await axios.get(`https://rgg-backend-videoclub.herokuapp.com/orders/${props.credentials.user._id}`, config);
+        let res = await axios.get(`https://rgg-backend-videoclub.herokuapp.com/orders/userId/${props.credentials.user.id}`, config);
         setPEDIDO_PELICULA(res.data);
-        console.log(res.data.profile);
     };
  
     const logOut = () => {
@@ -63,18 +62,19 @@ const Profile = (props) => {
                 <div className="pedidopadre">
                     <h5 className="orders">ORDERS</h5>
                     {
-                        pedido_peliculas.map((pedido) => {
-                            return (
-                                <div className="order">
-                                    {
-                                        pedido.titulo
+                        console.log(pedido_peliculas)
+                        // pedido_peliculas.map((pedido) => {
+                        //     return (
+                        //         <div className="order">
+                        //             {
+                        //                 pedido.titulo
 
-                                    } : {
-                                        pedido.precioalquiler
-                                    }
-                                </div>
-                            )
-                        })
+                        //             } : {
+                        //                 pedido.precioalquiler
+                        //             }
+                        //         </div>
+                        //     )
+                        // })
                     }
                 </div>
                 <div className="recuadroperfilInfo">

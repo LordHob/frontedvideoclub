@@ -11,7 +11,7 @@ const Header = (props) => {
     const llevame = () => {
         history("/");
     }
-
+    console.log(props);
     return (
         <div className="desingHeader">
             <div>
@@ -19,9 +19,11 @@ const Header = (props) => {
             </div>
             <div id="menu">
             <Boton destino="Home" url="/" />
-            <Boton destino="Login" url="/login" />
-            <Boton destino="Register" url="/register" />
-            <Boton destino="Profile" url="/profile" />
+            {!props.userLog?.user && <Boton destino="Login" url="/login" />}
+            {!props.userLog?.user && <Boton destino="Register" url="/register" />}
+            {props.userLog?.user && <Boton destino="Profile" url="/profile" />}
+            {props.userLog?.user?.admin && <Boton destino="Orders" url="/orders" />}
+            {props.userLog?.user?.admin && <Boton destino="Users" url="/users" />}
             </div>
         </div>
     )
