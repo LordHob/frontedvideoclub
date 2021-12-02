@@ -60,7 +60,8 @@ const Home = () => {
             </div>
         )
 
-    } else {
+    }
+    else {
 
         return (
             <div className="inicio">
