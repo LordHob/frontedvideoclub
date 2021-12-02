@@ -18,7 +18,7 @@ const Header = (props) => {
                 <img id="logo" src={logo} alt="logo" onClick={() => llevame()} />
             </div>
             <div id="menu">
-            <Boton destino="Home" url="/" />
+            {/* <Boton destino="Home" url="/" /> */}
             {!props.userLog?.user && <Boton destino="Login" url="/login" />}
             {!props.userLog?.user && <Boton destino="Register" url="/register" />}
             {props.userLog?.user && <Boton destino="Profile" url="/profile" />}

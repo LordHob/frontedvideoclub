@@ -32,21 +32,20 @@ const Admin = (props) => {
                 <div className="main-container-one">
                     <h1 className="admin-h1"></h1>
                     <div className="">
-                        <h2 className="text-center mt-2">Usuarios Registrados </h2>
+                        <h2 className="text-center mt-2">USERS </h2>
                         {datosusuario.length > 0 &&
                             <div>
-                                <div className="users-registers-title">
-                                    <p className="colum-components-admin-print" >Nombre</p>
-                                    <p className="colum-components-admin-print" >Email</p>
-                                    <p className="colum-components-admin-print" >Id Usuario</p>
-                                    <p className="colum-components-admin-print" >Eliminar Usuarios</p>
-                                </div>
+                            <div className="users-registers-title">
+                                <p className="colum-components-admin-print" >USER</p>
+                                <p className="colum-components-admin-print" >EMAIL</p>
+                                <p className="colum-components-admin-print" >CITY</p>
+                            </div>
                                 <div id="table-home-print">
                                     <div className="colum-home-print">
                                         {datosusuario.map(run => {
                                             return (
-                                                <p className="colum-components-admin-print-register" key={run._id}>
-                                                    {run.nombre}
+                                                <p className="colum-components-admin-print-register" key={run.id}>
+                                                    {run.name}
                                                 </p>
                                             )
                                         })}
@@ -54,7 +53,7 @@ const Admin = (props) => {
                                     <div className="colum-home-print">
                                         {datosusuario.map(run => {
                                             return (
-                                                <p className="colum-components-admin-print-register" key={run._id}>
+                                                <p className="colum-components-admin-print-register" key={run.id}>
                                                     {run.email}
                                                 </p>
                                             )
@@ -63,8 +62,8 @@ const Admin = (props) => {
                                     <div className="colum-home-print">
                                         {datosusuario.map(run => {
                                             return (
-                                                <p className="colum-components-admin-print-register" key={run._id}>
-                                                    {run._id}
+                                                <p className="colum-components-admin-print-register" key={run.id}>
+                                                    {run.city}
                                                 </p>
                                             )
                                         })}

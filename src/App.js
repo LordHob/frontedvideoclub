@@ -12,6 +12,7 @@ import ProfPelicula from './Containers/ProfPelicula/ProfPelicula';
 import Register from './Containers/Register/Register';
 import Home2 from './Containers/Home2/home2';
 import Users from './Containers/Users/Users';
+import Orders from './Containers/Orders/Orders';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/peliculas" element={<Peliculas />} />
           <Route path="/profPelicula" element={<ProfPelicula />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/orders" element={<Orders />} />
 
         </Routes>
 

@@ -6,7 +6,7 @@
     padding: 3em 0em;
     flex-direction: column;
     margin: auto;
-    background-color:#262626;
+    background-color: #262626;
 }
 tr, td {
     color:white;
@@ -85,8 +85,7 @@ border-top: 1px solid;
     padding: 15px 15px;
     width: 14em;
     margin: 0;
-    background-color: #d0d0d0;
-}
+    background-color: #262626}
  .last-order-titles {
     display: flex;
     justify-content: center;
@@ -95,17 +94,5 @@ border-top: 1px solid;
 #table-home-print{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #262626;
     }
-
-
-.colum-components-admin-print {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 0.01px solid;
-    border-right: 0.01px solid;
-    padding: 15px 15px ;
-    width: 14em;
-    margin: 0;
-    background-color: #af9f9f;
-}
